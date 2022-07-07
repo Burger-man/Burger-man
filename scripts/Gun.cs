@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
+    //Public objects/gameobjects
     private SC_FPSController bool_script;
 
     public Camera fpsCam;
@@ -14,8 +15,8 @@ public class Gun : MonoBehaviour
     public AudioClip Fire;
     public Animator animator;
     public GameObject Ammo_count;
-
-
+    
+    //Public and private values
     private float fireRate = 0.1f;
     public float nextFire = 0.0f;
     public float damage = 10f;
@@ -25,6 +26,7 @@ public class Gun : MonoBehaviour
     public float reloadTime = 2.10f;
     private bool isReloading = false;
 
+    //Runs at the beginning of the scripts
     void Start ()
     {
         bool_script = FPSPlayer.GetComponent<SC_FPSController>();
@@ -34,7 +36,7 @@ public class Gun : MonoBehaviour
     void Update()
     {
         Ammo_count.GetComponent<TMPro.TextMeshProUGUI>().text = currentAmmo.ToString();
-        if (bool_script.editWeapon == false)
+        if (bool_script.editWeapon == false) //Listens to the editWeapon value if it is false
         {
             animator.SetBool("EditWeapon", false);
             if (isReloading)
@@ -56,27 +58,26 @@ public class Gun : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.R))
             {
-                if (currentAmmo >= 30)
+                if (currentAmmo >= 30) //Checks if the gun has more then 30 bullets
                 {
                     return;
                 }
                 else
                 {
-                    animator.SetBool("RecoilHip", false);
-                    StartCoroutine(Reload());
+                    animator.SetBool("RecoilHip", false); //Checks if the gun has less then 30 bullets
+                    StartCoroutine(Reload()); //Executes the reload animation.
                     return;
                 }
             }
         }
-        // Edit weapon
+        // Edit weapon attachments animation
         if (bool_script.editWeapon == true)
         {
-            animator.SetBool("EditWeapon", true);
+            animator.SetBool("EditWeapon", true); 
             return;
         }
-
-
-        // Reload Animation
+        
+        // Reload weapon animation
         IEnumerator Reload()
         {
             isReloading = true;
@@ -88,7 +89,7 @@ public class Gun : MonoBehaviour
             isReloading = false;
         }
 
-        // Full auto fire
+        // Full auto fire and semi-auto fire for gun.
         void ShootAll()
         {
             animator.SetBool("RecoilHip", true);
@@ -105,6 +106,4 @@ public class Gun : MonoBehaviour
             }
         }
     }
-
-
 }
