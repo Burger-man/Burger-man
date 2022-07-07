@@ -13,6 +13,7 @@ I know C#, LUA, Batch, Python, HTML, CSS and a litte bit of JS.
 
 ### Revanced Studios website (Visual Studio Code, HTML, CSS, JS (I used plug-ins))
 > The website for my game studio called [Revanced Studios](https://revanced-studios.github.io/).
+> (The [source code](https://github.com/revanced-studios/revanced-studios.github.io))
 
 
 
