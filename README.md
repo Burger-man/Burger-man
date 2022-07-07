@@ -16,5 +16,5 @@ I make Games, Software, Videos and alot more. I've fallen in love with tech sinc
 > (In-game screenshot of the mavrick)
 <img src="https://github.com/Burger-man/Aboutme/blob/main/img/mavrick_pic1.png">
 
-> (Some Scripts of mavrick.)
+> (Some [Scripts](https://github.com/Burger-man/Aboutme/blob/main/scripts/Gun.cs) of mavrick.)
 
