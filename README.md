@@ -14,7 +14,7 @@ I know C#, LUA, Batch, Python, HTML, CSS and a litte bit of JS.
 
 ### Mavrick (Unity, C#)
 > My unity game called Mavrick. (In-game screenshot of the mavrick.)
-> (Some [Scripts](https://github.com/Burger-man/Aboutme/blob/main/scripts/Gun.cs) of mavrick.)
+> (Some [Scripts](https://github.com/Burger-man/About-me/tree/main/scripts/C%23) of mavrick.)
 > 
 >  <img src="https://github.com/Burger-man/Aboutme/blob/main/img/mavrick_pic1.png">
 
@@ -23,3 +23,5 @@ I know C#, LUA, Batch, Python, HTML, CSS and a litte bit of JS.
 > (I used this [script](https://github.com/Burger-man/About-me/blob/main/scripts/GUI.lua) to handle the GUI functions.) 
 >
 > <img src="https://github.com/Burger-man/About-me/blob/main/img/manila_setting_preview.png">
+
+I also made some Python and Batch programs but i can't share them.
