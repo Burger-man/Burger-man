@@ -11,4 +11,4 @@ The website for my game studio called [Revanced Studios](https://revanced-studio
 
 ### Mavrick
 My unity game called Mavrick.
-<img src="https://raw.githubusercontent.com/madelinekinnaird/Gerrymandr/master/images/az1.PNG">
+<img src="https://github.com/Burger-man/Aboutme/blob/main/img/mavrick_pic1.png">
